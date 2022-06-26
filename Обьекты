@@ -1,0 +1,17 @@
+Обьект это набор свойст *Имя:Значение*
+Обьекты это ссылочный тип
+
+const myCity = {
+    City: 'New tork', -- Нью Йорк это значения свойства
+    popular: true ,
+    country: 'USA' где country - свойство
+}
+
+Порядок свойств в обьекте не имеет значения
+const myCity = {
+    City: 'New tork' 
+    popular: true
+    country: 'USA'
+}
+
+console.log(myCity.city) - доступ к значению свойства  обьекта 

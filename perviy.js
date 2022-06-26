@@ -36,6 +36,40 @@ const copyOfA = objectA
 copyOfA.a = 20 (меняем свойство а в переменной objectA через ссылку в copyOfA )
 copyOfA.c = 'abc' (добавляем в objectA новое свойство с которое будет содержать c = 'abc')
 
+Статическая и динамическая типизации:
+
+String a = 'abc'    в этих двух строчках стринг и инт стоят для того что бы сразу
+int b = 10          обьявили тип переменных
+b = 'xyz'
+
+
+Плохой пример построения.
+function a() {
+    console.log('Hey there')
+ }
+ a()
+ a = 10
+ a()  
+
+Хороший пример Const для обьявления переменных 
+
+const a = () => {
+    console.log('Hey there')
+ }
+
+ a() // 'hey there' 
+
+ a = 10 // tyoeError: Assigment to constant variable
+
+ a() 
+ 
+ 
+
+
+
+
+
+
 
 
 
