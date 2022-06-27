@@ -1,0 +1,8 @@
+Window -  глобальный обьект присутствующий в веб браузере
+Global - присутсвует в Node.js
+globalThis - универсальный
+
+Примеры 
+просто   console.log('hello world')
+Бразуер Window.console.log('Hello')
+Node.js терминал  global.console.log('hello')

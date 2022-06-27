@@ -15,3 +15,57 @@ const myCity = {
 }
 
 console.log(myCity.city) - доступ к значению свойства  обьекта 
+const myCity = {
+    city: 'New tork' ,
+    popular: true ,
+    country: 'USA'
+}
+
+myCity.square = 'true' -- добавление новых свойств в обьект и их значений
+myCity['gabela'] = true -- в случае когда мы хотим добавить новое значение в свойство которое уже существует
+но значниея не имеет.
+
+myCity.city = 'Las Vegas' -- пример того как моно поменять значение в свойстве
+
+delete myCity.country -- удаления какого либо свойства и его значения 
+
+console.log(myCity.city)
+console.log(myCity.popular)
+console.log(myCity)
+
+const myCity = {
+    city: 'New york',
+    info: {
+        isPopular: true ,  --Вложенный обьект 
+        country: 'USA'
+    }
+}
+
+console.log(myCity.info.isPopular)
+console.log(myCity)
+
+delete myCity.info['isPopular']
+
+console.log(myCity)
+
+
+переменные с их значениями можно использовать как готовые свойство значение какого либо обьекта
+(то есть формально добавляться в этот обьект ссылку на переменную
+которая уже имеет свое значение.)
+const name = 'Bogdan'
+const postsQty = 23
+
+const userProfile = {
+    name: name ,
+    postsQty: postsQty,
+    hasSignedAgrimment: false
+}
+
+const userProfile2 = {
+    name,
+    postsQty,
+    hasSignedAgrimment: false
+}
+
+console.log(userProfile)
+console.log(userProfile2)

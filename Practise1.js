@@ -1,8 +1,5 @@
-const myCity = {
-    City: 'New tork' ,
-    popular: true ,
-    country: 'USA'
-}
+console.log('hello world')
 
-console.log(myCity.City)
-console.log(myCity.popular)
+Window.console.log('Hello')
+
+global.console.log('hello')
