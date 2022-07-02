@@ -1,0 +1,26 @@
+Как избежать мутаций
+Вариант 1
+
+const person = {  
+    name: 'bob' ,
+    age: 25
+}
+
+const person2 = Object.assign({}, person)  //благодаря методу assign мы не мутировали обьект в person
+
+person2.age = 26
+
+console.log(person2.age) //26
+console.log(person.age) //25
+
+
+Вариант2 
+
+const person = {  
+    name: 'bob' ,
+    age: 25
+}
+
+const person2 = { ...person } // используя такой синтаксис ...= это оператор разделения обьекта 
+// на свойства 
+person2.name = 'Alice'

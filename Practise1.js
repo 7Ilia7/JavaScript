@@ -1,5 +1,10 @@
-console.log('hello world')
+const person = {  
+    name: 'bob' ,
+    age: 25
+}
 
-Window.console.log('Hello')
+const person2 = { ...person }
+person2.name = 'Alice'
 
-global.console.log('hello')
+console.log(person2.name)  //26
+console.log(person.name)   //25
