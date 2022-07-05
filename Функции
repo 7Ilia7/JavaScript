@@ -1,0 +1,63 @@
+Функция -  это блок кода который можно выполнять многократно
+let a = 5
+let b = 3
+c = a + b
+console.log(c) //8  - это функция 
+
+let a = 5
+let b = 3
+function sum(a,b) {
+    const c = a + b
+    console.log(c)
+}
+
+sum(a,b)
+a = 8
+b = 12
+sum(a,b) // более короткий и правильный вариант
+
+Функция может быть 
+-Именнованой
+-Присвоенна переменной
+-Анонимной 
+-Аргументом при вызове другой функции
+-Значением свойства, методом обьекта 
+
+Функция - это обьекта
+
+Передача значения по ссылке
+function myFn(a,b) { -- параметры
+    let c
+    a = a + 1
+    c = a + b --- тело функции
+    return c -- результат 
+}
+myFn(10,3)
+console.log(myFn) - аргументы и вызов функции
+const personOne = {
+    name: 'bob',
+    age: 21
+}
+function increasePersonAge(person) {
+    person.age += 1
+    return person
+}
+
+increasePersonAge(personOne)
+console.log(personOne)
+
+Внутри функции не рекомендуеться мутировать внешние обьекты как выше
+Создание копии обьекта 
+const personOne = {
+    name: 'bob',
+    age: 21
+}
+function increasePersonAge(person) {
+    const updatedPerson = Object.assign({}, person)
+    updatedPerson.age += 1
+    return updatedPerson
+}
+
+const updatedPersonOna = increasePersonAge(personOne)
+console.log(personOne.age)
+console.log(updatedPersonOne.age) 

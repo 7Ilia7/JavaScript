@@ -1,3 +1,10 @@
- a = 10 // tyoeError: Assigment to constant variable
+let a = 5
+let b = 3l
+let c 
+c = a + b
+console.log(c)
 
- a()  
+a = 8
+b = 12
+c = a + b
+console.log(c)
